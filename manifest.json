@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Document Viewer",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "128": "icon.png"
   },
@@ -10,6 +10,20 @@
       "matches": ["<all_urls>"],
       "js": ["script.js"]
     }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "viewer.html",
+        "viewer.js",
+        "mammoth.min.js",
+        "xlsx.min.js",
+        "jszip.min.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
   ]
 }
-
